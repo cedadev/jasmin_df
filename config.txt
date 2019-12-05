@@ -1,0 +1,20 @@
+# regexps for filesystem types
+#
+# line format: 
+#   filesystem_type:comments:path_regexp
+# 
+# regexp must match the whole string (will have '$' auto-appended) so add .* if it is a stem only
+# 
+# whole line comments allowed - inline comments not
+#
+panfs::/group_workspaces/jasmin2/.*
+panfs::/group_workspaces/jasmin3/.*
+panfs::/group_workspaces/cems2/.*
+panfs::/work/scratch
+qb::/group_workspaces/jasmin4/.*
+qb:No parallel writes:/gws/nopw/j04/.*
+pure::/home/users
+pure:No parallel writes:/work/scratch-nompiio/.*
+pure:supports small files:/gws/smf/j04/.*
+local:Not for data files:/tmp
+local::/
